@@ -14,7 +14,7 @@
     margin: auto;
 }
 header{
-    background-color: var(--color-balck);
+    background-color: rgb(192,238,195);
     text-align: center;
 }
 ul{
@@ -26,7 +26,7 @@ a{
 /* ------------------------------------------------nav----------------------------------- */
 nav{
     background-color: var(--color-balck);
-
+    /* background-color: red; */
 }
 nav ul{
     display: flex;
@@ -146,4 +146,58 @@ nav ul li:nth-child(9) button i{
 }
 nav ul li:nth-child(9) button:hover{
     background-color: rgb(129, 123, 123);
+}
+
+/* ===================================menu_bar======================= */
+.menu-bar{
+    background-color: rgb(192,238,195);
+}
+
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar ul li a{
+    color: black;
+    font-size: 16px;
+}
+.menu-bar ul li a i{
+    margin-right: 6px;
+    font-size: 16px;
+}
+.menu-bar ul li{
+    padding: 15px 6px;
+    transition: all 0.3s ease;
+}
+.menu-bar ul li:hover{
+    background-color: white;
+}
+.menu-bar ul li:nth-child(9){
+    position: relative;
+}
+.menu-bar ul li:nth-child(9)::before{
+    position: absolute;
+    content: "giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #F51212;
+    border-radius: 5px;
+    right: -25px;
+    top: 2px;
+    font-size: 10px;
+    padding-left: 3px;
+    color: var(--color-white);
+}
+.menu-bar ul li:nth-child(9)::after{
+    position: absolute;
+    content: "";
+    background-color: #F51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 12px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
 }
