@@ -216,6 +216,8 @@ nav ul li:nth-child(9) button:hover{
     justify-content: center;
     text-align: center;
     color: #333;
+    display: none;
+    z-index: 999;
 }
 .adress-form-content{
     width: 450px;
